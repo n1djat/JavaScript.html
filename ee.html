@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+				<title>Instagram</title>
+</head>
+<body>
+		<script>
+					var 	saniye=0;
+					function xronometr () {
+						var dəq= Math.floor (saniye/60);
+						var saat=		Math.floor(saniye/3600);
+						var dəqiqə=dəq%60;
+						var san= saniye%60;
+						
+						document.write(saat+" :"+dəqiqə+" : "+san)	;		
+						document.write("<hr/>");
+						saniye++;
+						
+				
+					}
+						setInterval("xronometr()",1000)
+		</script>		
+</body>
+</html>
